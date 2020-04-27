@@ -188,9 +188,9 @@
 <p>5.<strong>日程提醒小助手</strong>：从酷Q目录下的<code>time.ini</code>中读取按照要求所编写的日程，每天定时在Q群中提醒，并且有提前30s提醒功能。使用<code>time on</code>打开日程提醒小助手，使用<code>time off</code>关闭日程提醒小助手。使用<code>`time refresh</code>刷新日程提醒小助手中的读入日程（在机器人主人目录下的<code>time.ini</code>）。使用<code>time table</code>查看日程提醒小助手中的所有日程。</p>
 <p>6.<strong>词库模式（原祖安模式）</strong>：使用<code>word on</code>打开词库模式，使用<code>word off</code>退出词库模式。开启机器人时会在酷Q目录下的<code>word.txt</code>中读取词库，在词库模式中群成员每发一句话机器人都会随机在词库中挑选一句话发送并@群成员。彩蛋：在4月1日愚人节当天将会从<code>April.txt</code>中读取词库并且强制进入愚人节词库模式，除非使用<code>shutdown</code>之外不可关闭，与普通词库模式可同时进行。词库模式原来叫做祖安模式，即群成员每说一句话都会被机器人模仿祖安人说话的语气骂一句话。</p>
 <p>7.<strong>签到系统</strong>：使用<code>check me</code>对自己进行进行签到操作并记录，每天每人仅能进行一次签到操作。使用<code>check un</code>查看本群当日未签到的人，使用<code>check ed</code>查看本群已签到的人。</p>
-<p>8.<strong>禁言群成员</strong>：使用<code>shutup+QQ号或@群成员+禁言秒数</code>实现对群成员的禁言，机器人不可将自己禁言，也不可将权限比自己大的群成员（如机器人是群管理，则无法对群主禁言）禁言。</p>
+<p>8.<strong>禁言群成员</strong>：使用<code>shutup+QQ号或@群成员+禁言秒数</code>实现对群成员的禁言，机器人不可将自己禁言，也不可将权限比自己大的群成员禁言（如机器人是群管理，则无法对群主禁言）。</p>
 <p>9.<strong>查询群成员信息</strong>：使用<code>info+QQ号或@群成员</code>查看群成员的个人信息即在本群的部分信息。</p>
-<p>10.<strong>维基百科查询</strong>：此功能需要科学上网，若没有会返回错误。利用维基百科API获取维基百科条目摘要，使用<code>wiki title+条目名称</code>获取条目摘要。</p>
+<p>10.<strong>维基百科查询</strong>：此功能需要科学上网，若没有会返回错误。利用维基百科API获取维基百科条目摘要，使用<code>wiki title+条目名称</code>获取条目摘要。如果无法科学上网，也可以使用百度百科查询（见13）。</p>
 <p>11.<strong>随机土味情话</strong>：使用<code>w</code>随机发送一句土味情话，API网址可在设置中改动，默认网址为<a href="https://api.lovelive.tools/api/SweetNothings" target="_blank" rel="noopener">https://api.lovelive.tools/api/SweetNothings</a>，请注意修改网址一定要是可直接返回文本的API网址，即在浏览器中打开网址时页面上只有文本。</p>
 <p>12.<strong>1A2B小游戏加强版</strong>：1A2B游戏原来是<code>0~9</code>共十个数字组成4位数让对方来猜，加强版可以包含大小写字母和数字，甚至是特殊符号，可以自定要猜测的字符数量，猜测的字符串会在预置文本串中随机选择，预置文本串默认为<code>0123456789abcdef</code>，即包含数字和字母，如需修改则使用<code>1A2B set+文本串</code>，比如<code>1A2B set abcdefgh</code>在游戏开始时就会从这串只有小写英文字母的预置文本串随机选择几个字符进行猜测。使用<code>1A2B</code>或<code>1A2B+数字</code>来开始游戏，如果有数字则使用该数字作为要猜测的字符数量，如果没有数字则默认4位或预置文本串长度。使用<code>1A2B rule</code>查看游戏规则，使用<code>1A2B string</code>查看预置文本串，使用<code>1A2B ans</code>在游戏进行过程中查看答案并退出游戏。如果在游戏进行中使用<code>1A2B</code>或<code>1A2B+数字</code>则会重新生成字符串并重新开始游戏。</p>
 <p>13.<strong>百度百科查询</strong>：为了照顾广大大陆用户，特地开辟百度百科词条摘要查询功能。使用<code>bk+词条名称</code>即可查询该词条摘要。</p>
@@ -234,7 +234,7 @@ bk [bk_title] - 查询百度百科中标题为bk_title的条目摘要。
 <pre><code>  1A2B [AB_Number] - 开始玩1A2B游戏。AB_Number参数可空，若为空则默认为4。机器人将会从预置文本串中选择AB_Number个字符组成字符串让用户猜测。
   1A2B rule - 查看1A2B规则。
   1A2B string - 查看1A2B当前预置文本串。
-  1A2B set [AB_string] - 将1A2B当前预置文本串设为`AB_string`。注意游戏过程中不可更改，AB_string中的字符不可重复。
+  1A2B set [AB_string] - 将1A2B当前预置文本串设为AB_string。注意游戏过程中不可更改，AB_string中的字符不可重复。
   1A2B ans - 查看当前1A2B游戏答案。查看答案后游戏退出。
 </code></pre><p>  预期功能：实现单群单私聊游戏分隔开（所需改动较大）。</p>
 <p>  2.日志中增加记录信息总条数。</p>
