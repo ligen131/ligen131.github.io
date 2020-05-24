@@ -126,7 +126,7 @@
               
                 <p class="mt-3 post-meta">
                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-                  星期三, 四月 29日 2020, 7:37 晚上
+                  星期六, 五月 9日 2020, 4:30 下午
                 </p>
               
 
@@ -135,7 +135,7 @@
                   
                   <span class="post-meta">
                     <i class="far fa-chart-bar"></i>
-                    6.7k 字
+                    7.1k 字
                   </span>
                 
 
@@ -143,7 +143,7 @@
                   
                   <span class="post-meta">
                       <i class="far fa-clock"></i>
-                      24 分钟
+                      25 分钟
                   </span>
                 
 
@@ -171,7 +171,7 @@
           <div class="post-content mx-auto" id="post">
             
             <div class="markdown-body">
-              <h1 id="多功能命令式机器人"><a href="#多功能命令式机器人" class="headerlink" title="多功能命令式机器人"></a>多功能命令式机器人</h1><h2 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h2><p>目前版本：<code>v3.3.4</code></p>
+              <h1 id="多功能命令式机器人"><a href="#多功能命令式机器人" class="headerlink" title="多功能命令式机器人"></a>多功能命令式机器人</h1><h2 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h2><p>目前版本：<code>v3.5.0</code></p>
 <p><code>AppId: io.gitee.ligen131.ligen_robot</code></p>
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>多功能命令式机器人，是一个Q群机器人，拥有发送消息自动回复的特点。其涵盖了诸多功能，其中最为特色的功能是<strong>1A2B小游戏加强版</strong>，除此之外还有<strong>防撤回系统</strong>、<strong>日程提醒小助手</strong>、<strong>词库模式（原祖安模式）</strong>、<strong>维基/百度百科条目查询</strong>。</p>
 <p>如想直观了解机器人的诸多特色，请移步<strong>应用实际截图</strong>板块查看。</p>
@@ -188,7 +188,7 @@
 <p>5.<strong>日程提醒小助手</strong>：从酷Q目录下的<code>time.ini</code>中读取按照要求所编写的日程，每天定时在Q群中提醒，并且有提前30s提醒功能。使用<code>time on</code>打开日程提醒小助手，使用<code>time off</code>关闭日程提醒小助手。使用<code>`time refresh</code>刷新日程提醒小助手中的读入日程（在机器人主人目录下的<code>time.ini</code>）。使用<code>time table</code>查看日程提醒小助手中的所有日程。</p>
 <p>6.<strong>词库模式（原祖安模式）</strong>：使用<code>word on</code>打开词库模式，使用<code>word off</code>退出词库模式。开启机器人时会在酷Q目录下的<code>word.txt</code>中读取词库，在词库模式中群成员每发一句话机器人都会随机在词库中挑选一句话发送并@群成员。彩蛋：在4月1日愚人节当天将会从<code>april.txt</code>中读取词库并且强制进入愚人节词库模式，除非使用<code>shutdown</code>之外不可关闭，与普通词库模式可同时进行。词库模式原来叫做祖安模式，即群成员每说一句话都会被机器人模仿祖安人说话的语气骂一句话。</p>
 <p>7.<strong>签到系统</strong>：使用<code>check me</code>对自己进行进行签到操作并记录，每天每人仅能进行一次签到操作。使用<code>check un</code>查看本群当日未签到的人，使用<code>check ed</code>查看本群已签到的人。</p>
-<p>8.<strong>禁言群成员</strong>：使用<code>shutup+QQ号或@群成员+禁言秒数</code>实现对群成员的禁言，机器人不可将自己禁言，也不可将权限比自己大的群成员禁言（如机器人是群管理，则无法对群主禁言）。</p>
+<p>8.<strong>禁言群成员</strong>：使用<code>shutup+QQ号或@群成员+禁言秒数</code>实现对群成员的禁言，机器人不可将自己禁言，也不可将权限比自己大的群成员禁言（如机器人是群管理，则无法对群主禁言）。如果设置了最高权限管理员，则任何群成员不可对最高权限管理员禁言。</p>
 <p>9.<strong>查询群成员信息</strong>：使用<code>info+QQ号或@群成员</code>查看群成员的个人信息即在本群的部分信息。</p>
 <p>10.<strong>维基百科查询</strong>：此功能需要科学上网，若没有会返回错误。利用维基百科API获取维基百科条目摘要，使用<code>wiki title+条目名称</code>获取条目摘要。如果无法科学上网，也可以使用百度百科查询（见13）。</p>
 <p>11.<strong>随机土味情话</strong>：使用<code>w</code>随机发送一句土味情话，API网址可在设置中改动，默认网址为<a href="https://api.lovelive.tools/api/SweetNothings" target="_blank" rel="noopener">https://api.lovelive.tools/api/SweetNothings</a>，请注意修改网址一定要是可直接返回文本的API网址，即在浏览器中打开网址时页面上只有文本。</p>
@@ -196,6 +196,8 @@
 <p>13.<strong>百度百科查询</strong>：为了照顾广大大陆用户，特地开辟百度百科词条摘要查询功能。使用<code>bk+词条名称</code>即可查询该词条摘要。</p>
 <p>14.<strong>唯一群原则</strong>：由于本机器人功能众多，代码繁杂，无法支持多群操作，故仅支持一个主群对该机器人的操作，其他群的消息不记录、不处理。即使防撤回系统和签到系统仍然有分群记录，但在唯一群原则下仅记录一个群。未来将不会修改防撤回系统和签到系统。使用<code>main</code>查询为遵循唯一群原则而单独服务的唯一群号，特殊地，本命令不遵循唯一群原则，本命令在机器人关机状态下仍然可以使用。主群群号记录在酷Q目录下的<code>q.txt</code>中，可以手动修改，也可以在设置中修改。</p>
 <p>15.<strong>机器人状态查询</strong>：使用<code>sta</code>用于查看机器人运行状态及基本信息，本命令在机器人关机状态下仍然可以使用。</p>
+<p>16.<strong>有道翻译</strong>：使用<code>tr [word]</code>命令对英文单词进行有道翻译，空格需用<code>_</code>(下划线)或<code>%20</code>代替。如果找到该词，会返回该词各种词义及特殊形式（比如比较级、最高级、复数等）。为防止访问过于频繁，已开启10秒访问限制。</p>
+<p>17.<strong>自动成语接龙</strong>：使用<code>idiom on</code>打开自动成语接龙，成语需要放置在<code>【】</code>(中文字符中括号)内。因为原网站有访问限制，故设置了5秒接龙检测。使用<code>idiom off</code>关闭自动成语接龙。本功能适用于腾讯QQ机器人小冰的成语接龙，已通过实际测试。</p>
 <h2 id="应用实际截图"><a href="#应用实际截图" class="headerlink" title="应用实际截图"></a>应用实际截图</h2><h3 id="启动酷Q"><a href="#启动酷Q" class="headerlink" title="启动酷Q"></a>启动酷Q</h3><p>每次启动都会检验机器人是否已授权，是否有效。若无效、未授权，则会使酷Q发生错误并强制退出。</p>
 <p><img src="/public/RobotImg/gogo.png" srcset="/img/loading.gif" alt="启动酷Q"></p>
 <h3 id="设置版面"><a href="#设置版面" class="headerlink" title="设置版面"></a>设置版面</h3><p><img src="/public/RobotImg/setting.png" srcset="/img/loading.gif" alt="设置版面"></p>
@@ -248,7 +250,7 @@ word off - 关闭词库模式。
 check me - 执行签到操作。每日只能签到一次。
 check un - 查询该群当日未签到的人。
 check ed - 查询该群当日已签到的人。
-message [message_number] - 显示最近message_number条消息。当前记录信息条数最多1条。在机器人使用shutdown命令关闭时，仍然会记录信息。
+message [message_number] - 显示最近message_number条消息。当前记录信息条数最多4条。在机器人使用shutdown命令关闭时，仍然会记录信息。
 time on - 打开日程提醒小助手（默认开启）。
 time off - 关闭日程提醒小助手。
 time refresh - 刷新日程提醒小助手中的读入日程（在机器人主人目录下的time.ini）。
@@ -263,6 +265,9 @@ bk [bk_title] - 查询百度百科中标题为bk_title的条目摘要。
 1A2B set [AB_string] - 将1A2B当前预置文本串设为AB_string。注意游戏过程中不可更改，AB_string中的字符不可重复。
 1A2B ans - 查看当前1A2B游戏答案。查看答案后游戏退出。
 1A2B rank [c/t] [people_number] [string_length] [guess_length] - 查看1A2B游戏猜测次数或猜测用时风云榜。共四个参数均可忽略，但如要使用后面的参数则前面的参数可用a作为占位符。参数一为排序第一关键字，如果参数一为a则按猜测次数排序，如参数一为t则按猜测用时排序，如果忽略本参数默认以猜测次数排序。people_number表示显示前几名，string_length表示预置文本串长度，guess_length表示所猜测的字符串长度。如果后三个参数有数值，则会显示前people_number名且在string_length取guess_length中的排行榜。如果忽略或用占位符a替代，则该参数默认为全部。
+idiom on - 开启自动成语接龙，成语请放置在【】内。
+idiom off - 关闭自动成语接龙。
+tr [word] - 有道翻译，将word翻译成中文释义，空格请用_（下划线）代替。
 </code></pre><h2 id="局限性"><a href="#局限性" class="headerlink" title="局限性"></a>局限性</h2><p>1.由于本机器人功能众多，代码繁杂，无法支持多群操作，故仅支持一个主群对该机器人的操作，其他群的消息不记录、不处理。即遵循唯一群原则，首次使用请在设置中设置要服务的主群号。</p>
 <p>2.私聊、讨论组均无法使用机器人，无群号的群也无法使用，请升级QQ群后再使用。</p>
 <p>3.部分功能所发消息可能过长，请警惕刷屏风险。</p>
@@ -279,6 +284,10 @@ bk [bk_title] - 查询百度百科中标题为bk_title的条目摘要。
 <p>感谢所有帮助我一同测试的两个群共三十几位同学的支持与帮助！</p>
 <p>感谢正在阅读本文的你。</p>
 <h2 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h2><blockquote>
+<p>  <strong>v3.4.0~v3.5.0更新2020.5.9 16:30</strong></p>
+<p>  1.新增<code>tr</code>命令对英文单词进行有道翻译，空格需用<code>_</code>(下划线)代替。</p>
+<p>  2.新增最高权限管理员，不可对最高权限管理员禁言。</p>
+<p>  3.新增<code>idiom</code>命令进行自动成语接龙，因为原网站有访问限制，故设置了5秒接龙检测。使用<code>idiom on</code>打开自动成语接龙，需将成语放在<code>【】</code>内。使用<code>idiom off</code>关闭自动成语接龙。本功能适用于腾讯QQ机器人小冰的成语接龙，已通过实际测试。</p>
 <p>  <strong>v3.3.1~v3.3.4更新2020.4.29 12:10</strong></p>
 <p>  1.1A2B游戏风云排行榜增加筛选条件，命令<code>1A2B rank [c/t] [people_number] [string_length] [guess_length]</code>，现在共四个参数均可忽略，但如要使用后面的参数则前面的参数可用<code>a</code>作为占位符。参数一为排序第一关键字，如果参数一为<code>a</code>则按猜测次数排序，如参数一为<code>t</code>则按猜测用时排序，如果忽略本参数默认以猜测次数排序。<code>people_number</code>表示显示前几名，<code>string_length</code>表示预置文本串长度，<code>guess_length</code>表示所猜测的字符串长度。如果后三个参数有数值，则会显示前<code>people_number</code>名且在<code>string_length</code>取<code>guess_length</code>中的排行榜。如果忽略或用占位符<code>a</code>替代，则该参数默认为全部。简单来说，<code>1A2B rank+次数(a/c/其他)还是用时(t)+前几名(数字/a表示所有)+几取几(两个数字/a)</code>。本次更新将风云排行榜单独放为一个子程序，方便参数传入，减少代码量。</p>
 <p>  2.简化1A2B游戏过程中部分话语，避免话语啰嗦过长。</p>
@@ -389,7 +398,7 @@ bk [bk_title] - 查询百度百科中标题为bk_title的条目摘要。
                 
               </p>
               
-                <p class="note note-warning"><a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" srcset="/img/loading.gif" /></a><br />本博客所有作品均采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可。未经允许，禁止转载！</p>
+                <p class="note note-warning"><a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="/public/license.png" srcset="/img/loading.gif" /></a><br />本博客所有作品均采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可。未经允许，禁止转载！</p>
               
               
                 <div class="post-prevnext row">
